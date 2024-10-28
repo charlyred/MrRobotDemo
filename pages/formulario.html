@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a> </li>
+                <li><a href="acercaDe.html"> Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a> </li>
+                <li><a href="PreguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                <li>Formulario</li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Complete sus Datos</h1>
+            <form action="" method="">
+                <fieldset>
+                    <legend><b>Datos Personales:</b></legend>
+                    <label for="nombre">Nombre: (*) 
+                        <input type="text" id="nombre" name="nombre" size="15" maxlength="15" required placeholder ="Ejemplo: Juan">
+                    </label> 
+                    <label for="apellido">Apellido: (*) 
+                        <input type="text" id="apellido" name="apellido" size="15" maxlength="20" required>
+                    </label> 
+                    <br><br>
+                    <label for="dni">dni (*)
+                        <input type="number" name="dni" id="dni" size="30" min="10000000" max="120000000" placeholder="solo coloque números" required>
+                    </label>
+                    <label for="tramite" >Nro trámite (*)
+                        <input type="password" name="tramite" id="tramite" required>
+                    </label>
+                    <label for="fecNac">Fecha de Nacimiento: 
+                        <input type="date" name="fecNac" id="fecNac">
+                    </label>
+                    <br><br>
+                    <label for="correo">e-Mail (*)
+                        <input type="email" name="correo" id="correo">
+                    </label>
+                    <small>(*) Campos obligatorios.</small><br><br>
+                    <label for="estatura">Estatura
+                        <select name="estatura" id="estatura">
+                            <option value="baja">Baja </option>
+                            <option value="media">Media </option>
+                            <option value="Alta">Alta </option>
+                            <option value="Super Alta" disabled>Super Alta </option>
+                        </select>
+                    </label>
+                    <br><br>
+                    <label for="adjunto">Adjuntar foto:
+                        <input type="file" name="adjunto" id="adjunto"><br>
+                         <small>(Formato permitidos: jpeg, png y gif. Peso máximo 2MB.)</small><br>
+                    </label>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Datos secundarios</legend>
+                    <label for="comentarios">Escriba su consulta /comentario </label> <br>
+                        <textarea name="comentarios" id="comentarios" cols="40" rows="10" placeholder="Escribe tu pregunta o comentario..."></textarea>
+                   <br><br>
+                   <label for="turno"> Turno:
+                    <select name="turno" id="turno">
+                        <option value="1">Mañana</option>
+                        <option value="2">Tarde</option>
+                        <option value="3">Vespertino</option>
+                        <option value="4">Sábado mañana</option>
+                    </select>
+                   </label> <br><br>
+                   <label for="conoc">Conocimientos previos:
+                    <input type="checkbox" name="conoc" id="conoc" value="1"> HTML
+                    <input type="checkbox" name="conoc" id="conoc" value="2"> CSS
+                    <input type="checkbox" name="conoc" id="conoc" value="3"> JavaScript
+                    <input type="checkbox" name="conoc" id="conoc" value="4"> Python
+                   </label>
+                   <br><br>
+                </fieldset>
+                <label for="residencia"> Zona de Residencia:
+                    <input type="radio" name="residencia" id="residencia" value="1"> CABA
+                    <input type="radio" name="residencia" id="residencia" value="2"> Prov. de Buenos Aires
+                    <input type="radio" name="residencia" id="residencia" value="3"> Gran Buenos Aires
+                    <input type="radio" name="residencia" id="residencia" value="4"> Interior
+                </label>
+                <br><br>
+                <label for="color"> color favorito:
+                    <input type="color" name="color" id="color"></label>
+                <br><br>
+                <label for="hijos">Cantidad de hijos:
+                    <input type="number" min="1" max="12" name="hijos" id="hijos">
+                </label>
+                <br><br>
+                <input type="checkbox" name="terminos" id="terminos" required> Aceptar términos y condiciones<br>
+                <br><br>
+                <input type="submit" value="Enviar Datos">
+                <input type="reset" value="Borrar Campos">
+                <br><br><br>
+            </form>
+        </section>
+ 
+    </main>
+
+    <footer>
+        <p>© 2024 Charly El Rojo / Web Semántica</p>    
+    </footer>
+</body>
+</html>
